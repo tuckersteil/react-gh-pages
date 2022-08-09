@@ -1,18 +1,5 @@
 {
   "bets": [
-    {
-      "betamount": "66",
-      "team": "Los Angeles Clippers",
-      "line": "+3.5",
-      "odds": "-110",
-      "id": 1
-    },
-    {
-      "betamount": "200",
-      "team": "Arizona Cardinals",
-      "line": "-250",
-      "odds": "-250",
-      "id": 2
-    }
+  
   ]
 }

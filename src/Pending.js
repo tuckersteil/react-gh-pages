@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
+import { Redirect } from "react-router-dom";
 
-function Pending({userLogin}){
+function Pending({userLogin, isLoggedIn}){
+    
     const[pendingBets, setPendingBets]=useState([])
     useEffect(()=> {
         fetch("http://localhost:3002/bets")
@@ -14,6 +16,7 @@ function Pending({userLogin}){
         }
 
         console.log(pendingBets)
+        if (!isLoggedIn) return <Redirect to="/login" />;
     return (
         <div>
             <h1>Pending Bets For...<p>User: {userLogin.username}</p>
