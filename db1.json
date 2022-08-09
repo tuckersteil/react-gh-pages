@@ -1,5 +1,18 @@
 {
   "bets": [
-  
+    {
+      "betamount": "",
+      "team": "Los Angeles Clippers",
+      "line": "+3.5",
+      "odds": "-110",
+      "id": 1
+    },
+    {
+      "betamount": "50",
+      "team": "St. Loius Cardinals",
+      "line": "-200",
+      "odds": "-200",
+      "id": 2
+    }
   ]
 }
