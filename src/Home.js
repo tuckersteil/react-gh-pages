@@ -15,7 +15,6 @@ function Home({ isLoggedIn }) {
           <li><NavLink to="/basketball" exact>Basketball</NavLink></li>
           <li><NavLink to="/baseball" exact>Baseball</NavLink></li>
           <li><NavLink to="/football" exact>Football</NavLink></li>
-          <li>test</li>
         </ul> 
     </div>
   );

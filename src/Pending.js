@@ -20,7 +20,8 @@ function Pending({userLogin, isLoggedIn}){
     return (
         <div>
             <h1>Pending Bets For...<p>User: {userLogin.username}</p>
-                <ul style={betSlipStyle}>{pendingBets.map((bet)=> (
+                <ul style={betSlipStyle}>{pendingBets.map((bet)=>(
+                   
                     <li key={bet.id} className="pending">
                         <p className="caption">Team:</p>
                         <p className="betText">{bet.team}</p>

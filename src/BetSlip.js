@@ -22,7 +22,7 @@ function BetSlip({betSlipData, betData, resetBetSlip, setBetData}){
         
         const submitBet = {
             betamount: betFormData.betAmount,
-            team:betSlipData.team,
+            team:betSlipData.teamName,
             line: betData,
             odds: betData=== betSlipData.moneyline? betData: "-110"
         }
@@ -46,9 +46,9 @@ return (
     <div id="mydiv"style={betSlipStyle} >
         <form onSubmit={handleSubmit}>
             <h1>Bet Slip:</h1>
-            <h3>Team: {betSlipData.team}</h3> 
+            <h3>Team: {betSlipData.teamName}</h3> 
             {betData===betSlipData.moneyline? null:<h3>Line: {betData}</h3>}
-            {betData===betSlipData.spread||betData===betSlipData.over||betData===betSlipData.under? <h3>Odds: -110</h3>:<h3>Odds: {betData}</h3>}
+            {betData===betSlipData.spread||betData===betSlipData.gameTotal? <h3>Odds: -110</h3>:<h3>Odds: {betData}</h3>}
                 <label>
                 Bet Amount:
                     <input
