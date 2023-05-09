@@ -4,7 +4,6 @@ import Navbar from "./NavBar";
 import Home from "./Home";
 import Login from "./Login";
 import Pending from "./Pending";
-import BetSlip from "./BetSlip";
 import BetPage from "./BetPage";
 
 

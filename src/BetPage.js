@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import BetSlip from "./BetSlip";
 
 function BetPage({sport, getBetData, sportName}){  
+    console.log(sport)
     const [betSlipGame, setBetSlipGame] = useState([]);
     const [betData, setBetData] = useState([]);
 
