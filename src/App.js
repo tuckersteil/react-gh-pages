@@ -16,7 +16,7 @@ function App() {
   const [nfl, setNfl]=useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:3001/sports")
+        fetch("https://localhost:3001/sports")
         .then((r) => r.json())
         .then((sports)=> {
           getBaseball(sports)
